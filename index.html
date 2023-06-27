@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bé Lùn của anh thi tốttttt</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    function getRandomImage() {
+        var imagePaths = [
+            "assets/1.jpg",
+            "assets/2.jpg",
+            "assets/3.jpg",
+            "assets/6.jpg",
+            "assets/7.jpg",
+            "assets/8.jpg",
+            "assets/9.jpg",
+            "assets/10.jpg",
+        ];
+
+        var randomImagePath = imagePaths[Math.floor(Math.random() * imagePaths.length)];
+
+        document.getElementById("randomImage").src = randomImagePath;
+    }
+
+    window.addEventListener("load", getRandomImage);
+    </script>
+
+</head>
+<body>
+<main>
+    <section class="text-gray-600 body-font relative">
+        <div class="absolute inset-0 bg-gray-300">
+            <img alt="celebrate" class="w-full h-full object-cover object-center rounded-lg lg:w-screen lg:h-screen"
+                 id = "randomImage"
+                 src="assets/10.jpg"
+                 style="filter: grayscale(1) contrast(1.2) opacity(0.4);">
+        </div>
+        <div class="container px-5 py-24 mx-auto flex">
+            <div
+                    class="lg:w-1/3 md:w-1/2 bg-gray-900 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
+                <h2 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-yellow-300">Bé thi thiệt tốt nha</h2>
+                <p class="leading-7 text-sm text-gray-300">Những nỗ lực thầm lặng của em, dù cả thế giới có không thấy
+                    thì luôn có anh ghi tạc vào lòng. Anh biết em đã cố gắng rất nhiều, và anh cũng biết em sẽ thành công!
+                    Chắc chắn là như vậyyyy!</p>
+                <div class="relative mb-4">
+                    <h2 class="leading-7 text-sm text-gray-300">Dù em có hay bảo là em chưa đủ giỏi, dù em có luôn nói là em chưa
+                    đủ cố gắng, nhưng hơn ai hết, anh cảm nhận được, em đã cố gắng rất nhiềuuuuu! Anh biết hết đó, lớn hơn em 5 tuổi,
+                    nên anh auto đúng, cấm em cãiiii. Hiểu hông?</h2>
+                </div>
+                <button class="text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg"
+                        onclick="displayBirthdayMessage()">😍🥰😍
+                </button>
+                <p class="text-xs text-gray-300 mt-3">"Wishing you tremendous success and good luck in your upcoming exam.
+                    May your hard work and dedication pay off with outstanding results!"</p>
+            </div>
+        </div>
+    </section>
+</main>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
